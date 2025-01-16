@@ -10,7 +10,7 @@ domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/script/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl ipinfo.io/ip)
@@ -37,7 +37,7 @@ if [[ -n "$izin" ]]; then
 
   # Memeriksa apakah IP VPS ditemukan dalam izin.txt
   if [[ "$ipvps" != "$ip_vps" ]]; then
-    echo "IP VPS tidak ditemukan dalam izin.txt"
+    echo "3.1.195.124 ON izin.txt"
     exit 0
   fi
 else
