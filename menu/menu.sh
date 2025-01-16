@@ -12,7 +12,7 @@ tram=$(free -m | awk 'NR==2 {print $2}')
 uram=$(free -m | awk 'NR==2 {print $3}')
 fram=$(free -m | awk 'NR==2 {print $4}')
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
@@ -174,7 +174,7 @@ resv2r="${red}OFF${NC}"
 fi
 clear
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
-echo -e "                 • Rerechan Store •                 "
+echo -e "                 • Fanora Store •                 "
 echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | lolcat
 echo -e "\e[33m OS            \e[0m:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
 echo -e "\e[33m IP            \e[0m:  $IP"
