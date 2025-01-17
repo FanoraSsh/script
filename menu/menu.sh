@@ -39,7 +39,7 @@ if [[ -n "$izin" ]]; then
 
   # Memeriksa apakah IP VPS ditemukan dalam izin.txt
   if [[ "$ipvps" != "$ip_vps" ]]; then
-    echo "3.1.195.124 ON izin.txt"
+    echo "IP VPS tidak ditemukan dalam izin.txt"
     exit 0
   fi
 else
