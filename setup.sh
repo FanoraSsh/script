@@ -1,4 +1,7 @@
 #!/bin/bash
+# SETUP UNTUK IZIN IP SERVERNYA 
+# ### IPVPS 
+repo="https://raw.githubusercontent.com/FanoraSsh/script/main/"
 DATE2=$(date -R | cut -d " " -f -5)
 # BOT INFORMATION
 export CHATID="6389176425"
@@ -10,7 +13,7 @@ domain=$(cat /etc/xray/domain)
 date=$(date +"%Y-%m-%d")
 
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/FanoraSsh/script/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl ipinfo.io/ip)
